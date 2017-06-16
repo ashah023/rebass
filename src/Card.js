@@ -1,5 +1,6 @@
 
 import React from 'react'
+import PropTypes from 'prop-types'
 import Base from './Base'
 import config from './config'
 
@@ -33,9 +34,9 @@ const Card = ({
 
 Card.propTypes = {
   /** Width of card */
-  width: React.PropTypes.oneOfType([
-    React.PropTypes.number,
-    React.PropTypes.string
+  width: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.string
   ])
 }
 
@@ -44,7 +45,7 @@ Card.defaultProps = {
 }
 
 Card.contextTypes = {
-  rebass: React.PropTypes.object
+  rebass: PropTypes.object
 }
 
 export default Card

@@ -1,5 +1,6 @@
 
 import React from 'react'
+import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import Base from './Base'
 import Label from './Label'
@@ -139,11 +140,11 @@ const Checkbox = ({
 
 Checkbox.propTypes = {
   /** Label for form element */
-  label: React.PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
   /** Name attribute for form element */
-  name: React.PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   /** Place label centered under the radio */
-  stacked: React.PropTypes.bool
+  stacked: PropTypes.bool
 }
 
 export default Checkbox

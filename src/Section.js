@@ -1,5 +1,6 @@
 
 import React from 'react'
+import PropTypes from 'prop-types'
 import Base from './Base'
 import config from './config'
 
@@ -23,7 +24,7 @@ const Section = (props, { rebass }) => {
 }
 
 Section.contextTypes = {
-  rebass: React.PropTypes.object
+  rebass: PropTypes.object
 }
 
 export default Section

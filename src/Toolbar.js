@@ -1,5 +1,6 @@
 
 import React from 'react'
+import PropTypes from 'prop-types'
 import Base from './Base'
 import config from './config'
 
@@ -27,7 +28,7 @@ const Toolbar = (props, { rebass }) => {
 }
 
 Toolbar.contextTypes = {
-  rebass: React.PropTypes.object
+  rebass: PropTypes.object
 }
 
 export default Toolbar

@@ -1,5 +1,6 @@
 
 import React from 'react'
+import PropTypes from 'prop-types'
 import Base from './Base'
 import config from './config'
 
@@ -68,7 +69,7 @@ const Tooltip = ({
 
 Tooltip.propTypes = {
   /** Text to display in tooltip */
-  title: React.PropTypes.string
+  title: PropTypes.string
 }
 
 Tooltip.defaultProps = {
@@ -77,7 +78,7 @@ Tooltip.defaultProps = {
 }
 
 Tooltip.contextTypes = {
-  rebass: React.PropTypes.object
+  rebass: PropTypes.object
 }
 
 export default Tooltip

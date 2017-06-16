@@ -1,5 +1,6 @@
 
 import React from 'react'
+import PropTypes from 'prop-types'
 import Base from './Base'
 
 /** Arrow for use in dropdowns and other UI elements */
@@ -25,7 +26,7 @@ const Arrow = ({ direction, children, ...props }, { rebass }) => {
 
 Arrow.propTypes = {
   /** Direction of arrow */
-  direction: React.PropTypes.oneOf(['up', 'down'])
+  direction: PropTypes.oneOf(['up', 'down'])
 }
 
 Arrow.defaultProps = {
@@ -33,7 +34,7 @@ Arrow.defaultProps = {
 }
 
 Arrow.contextTypes = {
-  rebass: React.PropTypes.object
+  rebass: PropTypes.object
 }
 
 export default Arrow

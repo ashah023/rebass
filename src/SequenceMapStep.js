@@ -1,5 +1,6 @@
 
 import React from 'react'
+import PropTypes from 'prop-types'
 import LinkBlock from './LinkBlock'
 import config from './config'
 
@@ -71,16 +72,16 @@ const SequenceMapStep = ({
 }
 
 SequenceMapStep.contextTypes = {
-  rebass: React.PropTypes.object
+  rebass: PropTypes.object
 }
 
 SequenceMapStep.propTypes = {
   /** Width of step */
-  width: React.PropTypes.string,
+  width: PropTypes.string,
   /** Removes line from first step */
-  first: React.PropTypes.bool,
+  first: PropTypes.bool,
   /** Sets primary color on active step */
-  active: React.PropTypes.bool
+  active: PropTypes.bool
 }
 
 export default SequenceMapStep

@@ -1,5 +1,6 @@
 
 import React from 'react'
+import PropTypes from 'prop-types'
 import Base from './Base'
 import config from './config'
 
@@ -83,9 +84,9 @@ const Rating = ({
 
 Rating.propTypes = {
   /** Number of star rating from 1 to 5 */
-  value: React.PropTypes.number,
+  value: PropTypes.number,
   /** Click handler - returns index of star clicked */
-  onClick: React.PropTypes.func
+  onClick: PropTypes.func
 }
 
 Rating.defaultProps = {
@@ -94,7 +95,7 @@ Rating.defaultProps = {
 }
 
 Rating.contextTypes = {
-  rebass: React.PropTypes.object
+  rebass: PropTypes.object
 }
 
 export default Rating

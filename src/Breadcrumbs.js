@@ -1,5 +1,6 @@
 
 import React from 'react'
+import PropTypes from 'prop-types'
 import Base from './Base'
 import config from './config'
 
@@ -52,7 +53,7 @@ const Breadcrumbs = ({
 
 Breadcrumbs.propTypes = {
   /** Array of link props */
-  links: React.PropTypes.array.isRequired
+  links: PropTypes.array.isRequired
 }
 
 Breadcrumbs.defaultProps = {
@@ -60,7 +61,7 @@ Breadcrumbs.defaultProps = {
 }
 
 Breadcrumbs.contextTypes = {
-  rebass: React.PropTypes.object
+  rebass: PropTypes.object
 }
 
 export default Breadcrumbs

@@ -1,5 +1,6 @@
 
 import React from 'react'
+import PropTypes from 'prop-types'
 import Base from './Base'
 import HeadingLink from './HeadingLink'
 import Text from './Text'
@@ -47,15 +48,15 @@ const SectionHeader = ({
 
 SectionHeader.propTypes = {
   /** Section heading */
-  heading: React.PropTypes.string,
+  heading: PropTypes.string,
   /** Link to section, used in HeadingLink */
-  href: React.PropTypes.string,
+  href: PropTypes.string,
   /** Description of section */
-  description: React.PropTypes.string
+  description: PropTypes.string
 }
 
 SectionHeader.contextTypes = {
-  rebass: React.PropTypes.object
+  rebass: PropTypes.object
 }
 
 export default SectionHeader

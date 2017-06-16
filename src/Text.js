@@ -1,5 +1,6 @@
 
 import React from 'react'
+import PropTypes from 'prop-types'
 import Base from './Base'
 import config from './config'
 
@@ -29,13 +30,13 @@ const Text = ({
 
 Text.propTypes = {
   /** Sets a smaller font size */
-  small: React.PropTypes.bool,
+  small: PropTypes.bool,
   /** Sets bold font weight */
-  bold: React.PropTypes.bool
+  bold: PropTypes.bool
 }
 
 Text.contextTypes = {
-  rebass: React.PropTypes.object
+  rebass: PropTypes.object
 }
 
 export default Text
